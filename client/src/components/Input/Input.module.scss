@@ -1,0 +1,22 @@
+.inputContainer {
+    position: relative;
+    overflow-y: hidden;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    &_icons {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    &_input {
+        padding-left: 20px;
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: normal;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+}

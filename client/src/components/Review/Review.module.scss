@@ -1,0 +1,79 @@
+    .review_container {
+        width: 500px;
+        margin-left: 20px;
+        padding: 30px 10px;
+        position: relative;
+        transform: translateX(150px);
+        height: 400px;
+
+        &_avatar {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #8d8d8d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        &_header {
+            background-color: #4575a3;
+            height: 80px;
+            width: 310px;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-top-left-radius: 40px;
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            padding-left: 40px;
+            color: white;
+        }
+
+        &_main {
+            display: flex;
+
+            &_miniDiv1 {
+                clip-path: polygon(100% 0, 0 0, 0 21%);
+                width: 40px;
+                height: 60px;
+                position: absolute;
+                background-color: #4575a3;
+            }
+
+            &_miniDiv2 {
+                width: 40px;
+                height: 60px;
+                background-color: rgb(23, 76, 128);
+                border-bottom-left-radius: 100%;
+            }
+
+            &_container {
+                width: 400px;
+                border-bottom-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                box-shadow: 5px 5px 0px 5px #ccc;
+                padding: 20px;
+                height: 280px;
+                
+                p {
+                    margin: 10px 0 20px 0;
+                    color: #2e2e2e;
+                    font-family: system-ui;
+                    line-height: 150%;
+                    overflow-y: auto;
+                    height: 190px;
+                }
+
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }

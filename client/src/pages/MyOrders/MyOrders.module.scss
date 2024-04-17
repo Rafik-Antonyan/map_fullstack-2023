@@ -1,0 +1,235 @@
+.myOrders {
+    width: 100%;
+    display: flex;
+    padding: 3vh 0;
+    background-color: rgb(49, 49, 49);
+    min-height: 100vh;
+    color: rgb(221, 221, 221);
+    border-collapse: collapse;
+
+    &_container {
+        border: 2px solid rgb(31, 31, 31);
+        display: flex;
+        flex-direction: column;
+        margin: 0 2%;
+        width: 76% !important;
+
+        &_header {
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+
+            &_left {
+                cursor: pointer;
+                font-size: 36px;
+                background-color: rgb(60, 60, 60);
+                border-radius: 50%;
+                width: 45px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 4px;
+                color: #ccc;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &_mid {
+                font-size: 24px;
+            }
+        }
+
+        &_section {
+            &_empty {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 70vh;
+
+                &_container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    font-size: 24px;
+                    font-family: 'Courier New', Courier, monospace;
+
+                    img {
+                        width: 300px;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &_restaurant {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+
+                &_text {
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    border-top: 2px solid rgb(31, 31, 31);
+                    border-bottom: 2px solid rgb(31, 31, 31);
+                    padding-left: 20px;
+
+                    &_icons {
+                        width: 30vw;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 15px;
+
+                        svg {
+                            font-size: 36px;
+                        }
+
+                        &_active {
+                            font-size: 60px;
+                            height: 50px;
+                            width: 50px;
+                            color: #4ca6a8
+                        }
+
+                        &_image {
+                            filter: brightness(0) saturate(100%) invert(60%) sepia(10%) saturate(1896%) hue-rotate(133deg) brightness(95%) contrast(86%);
+                            min-height: 45px;
+                            min-width: 45px;
+                        }
+                    }
+                }
+
+                &_main {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+
+                    &_text {
+                        font-size: 32px;
+                        border-bottom: 1px solid #b3b3b3;
+                    }
+
+                    &_section {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        gap: 100px;
+                        justify-content: center;
+                        padding: 20px;
+
+                        &_contianer {
+                            display: flex;
+                            flex-direction: column;
+                            background-color: #5c5c5c;
+                            border-radius: 15px;
+                            padding: 15px;
+                            position: relative;
+
+                            &_remove {
+                                position: absolute;
+                                right: 10px;
+                                top: 10px;
+                                z-index: 2;
+                                width: 25px;
+                                height: 25px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
+
+                            &_image {
+                                img {
+                                    width: 300px;
+                                    height: 300px;
+                                    object-fit: contain;
+                                }
+                            }
+
+                            &_count {
+                                display: flex;
+                                width: 100%;
+                                justify-content: center;
+
+                                &_container {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 15px;
+
+                                    button {
+                                        background-color: #ccc;
+                                        border-radius: 50% !important;
+                                        width: 20px !important;
+                                        height: 20px !important;
+                                        font-size: 16px !important;
+                                        font-weight: bolder !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_tip {
+        width: 20%;
+        background-color: rgb(22, 22, 22);
+        height: 70vh;
+        position: fixed;
+        right: 1%;
+        bottom: 3vh;
+        border: 2px solid rgb(31, 31, 31);
+        padding-top: 7vh;
+
+        img {
+            position: absolute;
+            top: -26vh;
+            height: 45vh;
+            width: 20vw;
+        }
+    }
+
+    &_suggestion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        width: 21%;
+        z-index: 5;
+        top: 0;
+        background-color: rgb(49, 49, 49);
+
+        h1 {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        img:last-child {
+            cursor: pointer;
+            margin-top: 15px;
+            border-bottom: 2px solid #ccc;
+            box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+
+            &:hover {
+                filter: hue-rotate(90deg);
+                background-color: #5c5c5c;
+                box-shadow: 0px 2px 2px #de1dde;
+                border-radius: 50%;
+            }
+        }
+    }
+}

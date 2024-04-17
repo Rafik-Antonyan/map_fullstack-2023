@@ -1,0 +1,56 @@
+.addresses {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &>h2 {
+        text-align: center;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        max-height: 200px;
+        overflow-y: auto;
+
+        &_container {
+            border: 1px solid black;
+            padding: 8px 10px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+            justify-content: space-between;
+            border-radius: 5px;
+
+            p {
+                width: 80%;
+                font-size: 16px;
+            }
+
+            input{
+                width: 80%;
+                font-size: 16px;
+                padding: 4px 6px;
+                outline: none;
+            }
+
+            &_icons {
+                display: flex;
+                align-items: center;
+                font-size: 24px;
+                gap: 1px;
+
+                svg:hover {
+                    cursor: pointer;
+                    filter: grayscale(1);
+                }
+
+                svg:last-child {
+                    color: rgb(192, 0, 0);
+                }
+            }
+        }
+    }
+}

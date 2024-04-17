@@ -1,0 +1,77 @@
+.restaurantsCard {
+    width: calc(50% - 20px);
+    height: 320px;
+    display: flex;
+    padding: 15px;
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        -webkit-box-shadow: 0px 0px 27px 1px #000000;
+        box-shadow: 0px 0px 50px 1px #000000;
+        transform: scale(0.99);
+    }
+
+    &_image {
+        img {
+            width: 250px;
+            height: 100%;
+            object-fit: inherit;
+            border-radius: 10px;
+        }
+    }
+
+    &_info {
+        padding-left: 15px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+
+        &_left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+                padding-bottom: 5px;
+            }
+        }
+
+        &_right {
+            &_open {
+                border-radius: 15px;
+                padding: 5px;
+                border: 2px solid green;
+                width: 140px;
+                min-width: 140px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: green;
+                background: rgba(0, 128, 0, 0.151);
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+            &_close {
+                border-radius: 15px;
+                padding: 5px;
+                border: 2px solid red;
+                width: 140px;
+                min-width: 140px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(223, 0, 0);
+                background: rgba(223, 0, 0, 0.137);
+                font-weight: bolder;
+                cursor: pointer;
+            }
+        }
+    }
+}

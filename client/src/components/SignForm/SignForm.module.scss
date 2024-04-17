@@ -1,0 +1,68 @@
+.sign_container {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_form {
+        background-color: white;
+        width: 500px;
+        border-radius: 14px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            text-align: center;
+            padding: 10px;
+        }
+
+        &_inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &_error {
+                color: rgb(173, 0, 0);
+                font-size: 12px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            input {
+                padding: 10px !important;
+                background-color: white !important;
+                border: 2px solid #b3b3b3 !important;
+                border-radius: 15px;
+
+                &:focus {
+                    border: 2px solid black !important;
+                }
+            }
+
+            p {
+                text-decoration: underline;
+                cursor: pointer;
+                letter-spacing: 2px;
+            }
+        }
+
+        &_buttons {
+            display: flex;
+            gap: 10px;
+            padding-top: 20px;
+
+            button {
+                border-radius: 15px !important;
+                padding: 10px !important;
+                font-weight: bolder;
+            }
+        }
+    }
+}

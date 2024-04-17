@@ -1,0 +1,21 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20vw;
+
+    &_container {
+        background-color: transparent;
+        color: black;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 24px;
+        
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+    }
+}

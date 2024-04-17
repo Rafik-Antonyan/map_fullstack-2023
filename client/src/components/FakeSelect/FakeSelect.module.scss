@@ -1,0 +1,36 @@
+.fakeSelect {
+    background-color: white;
+    padding: 10px;
+
+    &_options {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        font-size: 24px;
+        height: 42px;
+        cursor: pointer;
+        padding: 0 10px;
+
+        div {
+            font-size: 16px;
+        }
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            transform: translateX(-10px) translateY(10px);
+            background-color: white;
+            gap: 10px;
+            padding: 10px 0;
+            box-shadow: 3px 3px #858585;
+            border-top: 2px solid #858585;
+            overflow-y: auto;
+
+            div:hover {
+                background-color: #ccc;
+            }
+        }
+    }
+}

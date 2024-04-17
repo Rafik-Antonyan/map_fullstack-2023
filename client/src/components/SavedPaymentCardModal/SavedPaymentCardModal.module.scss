@@ -1,0 +1,83 @@
+.savedPaymentCardModal {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    &_arrow{
+        position: absolute;
+        top: -75px;
+        left: -40px;
+        width: 40px;
+        height: 80px;
+        color: black;
+        background-color: #e4e4e4;
+        border-bottom-left-radius: 60px;
+        border-top-left-radius: 60px;
+        cursor: pointer;
+    }
+
+    &_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &_image {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            input[type="radio"]+label:before {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border: 2px solid #ccc;
+                border-radius: 50%;
+                background-color: white;
+            }
+
+            input[type="radio"]:checked+label:before {
+                background-color: #3abc8a;
+            }
+
+            input[type="radio"]:checked+label {
+                font-weight: bold;
+                color: #007bff;
+            }
+
+            img {
+                width: 70px;
+                height: 45px;
+                object-fit: 100% 100%;
+            }
+        }
+
+        &_cardInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            color: #7c7c7c;
+            gap: 4px;
+
+            &_numbers {
+                color: #555555;
+                font-weight: bolder;
+                font-size: 16px;
+            }
+        }
+    }
+}

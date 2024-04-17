@@ -1,0 +1,23 @@
+{
+  "name": "Art Lanch",
+  "order": [
+    {
+      "name": "Hot Dog",
+      "count": 2,
+      "image": "https://clipart-library.com/image_gallery2/Hot-Dog-Transparent.png",
+      "price": 250
+    },
+    {
+      "name": "Pizza",
+      "count": 3,
+      "image": "https://pngimg.com/d/pizza_PNG44092.png",
+      "price": 400
+    },
+    {
+      "name": "Salad",
+      "count": 1,
+      "image": "https://www.freeiconspng.com/thumbs/salad-png/greek-salad-png-21.png",
+      "price": 750
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.card_container {
+    min-width: 300px;
+    position: relative;
+
+    &_arrow {
+        position: absolute;
+        top: -75px;
+        left: -40px;
+        width: 40px;
+        height: 80px;
+        color: black;
+        background-color: #e4e4e4;
+        border-bottom-left-radius: 60px;
+        border-top-left-radius: 60px;
+        cursor: pointer;
+    }
+
+    img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover
+    }
+}

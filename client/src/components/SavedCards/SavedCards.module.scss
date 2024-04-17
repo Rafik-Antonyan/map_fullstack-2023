@@ -1,0 +1,83 @@
+.savedCards {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    width: 400px;
+
+    button {
+        background-color: #3abc8a;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    &_container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 7px 20px 7px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid #7c7c7c;
+
+        &_image {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 70px;
+                height: 45px;
+                object-fit: 100% 100%;
+            }
+        }
+
+        &_cardInfo {
+            display: flex;
+            color: #7c7c7c;
+            gap: 8px;
+
+            &_container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                gap: 4px;
+
+                &_numbers {
+                    color: #555555;
+                    font-weight: bolder;
+                    font-size: 16px;
+                }
+            }
+
+            &_remove {
+                position: absolute;
+                top: 3px;
+                right: 3px;
+
+                &:hover {
+                    background-color: rgb(112, 0, 0);
+                    border-radius: 50%;
+                    color: white;
+                    padding: 1px;
+                }
+            }
+        }
+    }
+
+    &_buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    hr {
+        margin: 5px 0;
+    }
+}

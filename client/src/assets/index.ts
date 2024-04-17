@@ -1,0 +1,53 @@
+import {
+  hotDogPng,
+  markIcon,
+  burgerImage,
+  burgerBread1Image,
+  burgerBread2Image,
+  burgerCheeseImage,
+  burgerMeatImage,
+  burgerVegetablesImage,
+  viberPng,
+  whatsAppPng,
+  phonePng,
+  relaxingBurgerPng,
+  masterCardPng,
+  visaCardPng,
+  courierPng,
+  burgerSayingYesPng,
+  trolleyPng,
+  verifiedPng,
+} from './png'
+import { logo, loginBackground } from './jpeg'
+import { burgerGif, emptyTrolleyGif, failureGif, successGif } from './gif'
+import { restaurantIcon } from './webp'
+import { courierSvg } from './svg'
+
+export {
+  courierPng,
+  restaurantIcon,
+  hotDogPng,
+  markIcon,
+  logo,
+  loginBackground,
+  burgerImage,
+  burgerGif,
+  burgerBread1Image,
+  burgerBread2Image,
+  burgerCheeseImage,
+  burgerMeatImage,
+  burgerVegetablesImage,
+  viberPng,
+  whatsAppPng,
+  phonePng,
+  relaxingBurgerPng,
+  emptyTrolleyGif,
+  failureGif,
+  successGif,
+  masterCardPng,
+  visaCardPng,
+  burgerSayingYesPng,
+  courierSvg,
+  trolleyPng,
+  verifiedPng,
+}

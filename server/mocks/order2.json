@@ -1,0 +1,23 @@
+{
+  "name": "KFC",
+  "order": [
+    {
+      "name": "Burger",
+      "count": 2,
+      "image": "https://static.vecteezy.com/system/resources/previews/022/911/697/non_2x/burger-transparent-free-png.png",
+      "price": 1750
+    },
+    {
+      "name": "Coca-Cola",
+      "count": 2,
+      "image": "https://www.freeiconspng.com/thumbs/coca-cola-png/coca-cola-png-image-10.png",
+      "price": 500
+    },
+    {
+      "name": "Fries",
+      "count": 4,
+      "image": "https://i.pinimg.com/originals/0f/af/a2/0fafa2288654000fc273d9c4876f1847.png",
+      "price": 550
+    }
+  ]
+}

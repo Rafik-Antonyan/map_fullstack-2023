@@ -1,0 +1,27 @@
+.orderFood {
+    width: 60%;
+    padding: 0 40px;
+
+    h1 {
+        font-weight: 700;
+        line-height: 64px;
+        font-size: 52px;
+        margin-bottom: 40px;
+    }
+
+    &_container {
+        display: flex;
+        gap: 10px;
+
+        &_address{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            button{
+                position: absolute;
+                top: -20px;
+            }
+        }
+    }
+}

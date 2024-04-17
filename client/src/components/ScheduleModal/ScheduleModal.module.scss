@@ -1,0 +1,15 @@
+.scheduleModal {
+    background-color: white;
+    width: 500px;
+
+    h1 {
+        padding: 16px;
+    }
+    
+    & > div > div > div:first-child {
+        background-color: #ccc;
+        border-bottom: 1px solid #858585;
+        padding: 8px !important;
+        height: 60px;
+    }
+}

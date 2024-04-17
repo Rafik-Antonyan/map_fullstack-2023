@@ -1,0 +1,85 @@
+.leftMenu {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    transition: 1s;
+
+    &_container {
+        height: 100%;
+        position: fixed;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        transition: 1s;
+        background-color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        justify-content: space-between;
+        width: 16vw;
+
+        &_top {
+            display: flex;
+            flex-direction: column;
+
+            &_buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                button {
+                    border-radius: 8px !important;
+                    font-size: 18px;
+                    height: 60px !important;
+                }
+            }
+
+            &_list {
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-size: 14px;
+            }
+        }
+
+        &_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-bottom: 10%;
+
+            &_container {
+                display: flex;
+                gap: 15px;
+                white-space: initial;
+                align-items: center;
+                font-weight: 500;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 15%;
+                }
+            }
+
+            &_buttons {
+                display: flex;
+                gap: 10px;
+
+                button {
+                    border-radius: 500px !important;
+                    width: 40% !important;
+                    height: 40px !important;
+                    align-items: center !important;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
